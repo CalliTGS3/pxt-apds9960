@@ -116,7 +116,7 @@ namespace apds9960 {
         i2cwrite(ADDR, APDS9960_GCONF4, 0x00) // disable gesture mode
         i2cwrite(ADDR, APDS9960_AICLEAR, 0x00) // clear all interrupt
         // power on
-        i2cwrite(ADDR, APDS9960_ENABLE, 0x47) // enable ALS,PROX,GESTURE
+        i2cwrite(ADDR, APDS9960_ENABLE, 0x07) // enable ALS,PROX,GESTURE
     }
     /**
      * Gets APDS9960 CHIP ID
