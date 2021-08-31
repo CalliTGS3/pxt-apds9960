@@ -1,0 +1,10 @@
+{
+	"APDS9960.ReadRedColor": "Liest den Rot Wert",
+	"APDS9960.ReadGreenColor": "Liest den Grün Wert",
+	"APDS9960.ReadBlueColor": "Liest den Blau Wert",
+	"APDS9960.ReadClear": "Liest den Weiß Wert",
+	"APDS9960.ReadProximity": "Liest den Abstands Wert",
+	"APDS9960.ReadHue": "Liest den Farbwert",
+	"APDS9960.ReadId": "Liest den Indikator",
+	"APDS9960.Init": "Initialisiert den Sensor"
+}

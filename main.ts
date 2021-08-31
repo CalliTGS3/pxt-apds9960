@@ -3,7 +3,7 @@
  */
 
 //% color="#31C7D5" weight=10 icon="\uf53f"
-namespace apds9960 {
+namespace APDS9960 {
     const ADDR = 0x39
     const APDS9960_RAM = 0x00
     const APDS9960_ENABLE = 0x80
@@ -107,7 +107,7 @@ namespace apds9960 {
         return hue * 60/100;
     }
 
-    //% blockId=apds9960_init block="APDS9960 Init"
+    //% blockId=APDS9960_init block="APDS9960 Init"
     //% weight=100
     export function Init(): void {
         i2cwrite(ADDR, APDS9960_ATIME, 252) // default inte time 4x2.78ms
@@ -122,9 +122,9 @@ namespace apds9960 {
      * Gets APDS9960 CHIP ID
      * It should return 0xAB or 171
      */
-    //% blockId=apds9960_getid block="ID"
+    //% blockId=APDS9960_getid block="ID"
     //% weight=99
-    export function id(): number {
+    export function ReadId(): number {
         let chipid = i2cread(ADDR, APDS9960_ID);
         return chipid;
     }
@@ -134,7 +134,7 @@ namespace apds9960 {
 //        let tmp = i2cread(ADDR, APDS9960_ENABLE) | 0x2;
 //        i2cwrite(ADDR, APDS9960_ENABLE, tmp);
 //    }
-    //% blockId=apds9960_readhue block="APDS9960 Get Hue"
+    //% blockId=APDS9960_readhue block="APDS9960 Get Hue"
     //% weight=98
     export function ReadHue(): number {
         let tmp = i2cread(ADDR, APDS9960_STATUS) & 0x1;
@@ -154,7 +154,7 @@ namespace apds9960 {
         let hue = rgb2hue(r,g,b);
         return hue
     }
-    //% blockId=apds9960_readred block="APDS9960 Get red Color"
+    //% blockId=APDS9960_readred block="APDS9960 Get red Color"
     //% weight=98
     export function ReadRedColor(): number {
         let tmp = i2cread(ADDR, APDS9960_STATUS) & 0x1;
@@ -165,7 +165,7 @@ namespace apds9960 {
         let r = i2cread(ADDR, APDS9960_RDATAL) + i2cread(ADDR, APDS9960_RDATAH)*256;
         return r
     }
-    //% blockId=apds9960_readgreen block="APDS9960 Get green Color"
+    //% blockId=APDS9960_readgreen block="APDS9960 Get green Color"
     //% weight=98
     export function ReadGreenColor(): number {
         let tmp = i2cread(ADDR, APDS9960_STATUS) & 0x1;
@@ -176,7 +176,7 @@ namespace apds9960 {
         let g = i2cread(ADDR, APDS9960_GDATAL) + i2cread(ADDR, APDS9960_GDATAH)*256;
         return g
     }
-    //% blockId=apds9960_readblue block="APDS9960 Get blue Color"
+    //% blockId=APDS9960_readblue block="APDS9960 Get blue Color"
     //% weight=98
     export function ReadBlueColor(): number {
         let tmp = i2cread(ADDR, APDS9960_STATUS) & 0x1;
@@ -187,7 +187,7 @@ namespace apds9960 {
         let b = i2cread(ADDR, APDS9960_BDATAL) + i2cread(ADDR, APDS9960_BDATAH)*256;
         return b
     }
-    //% blockId=apds9960_readclear block="APDS9960 Get Clear"
+    //% blockId=APDS9960_readclear block="APDS9960 Get Clear"
     //% weight=98
     export function ReadClear(): number {
         let tmp = i2cread(ADDR, APDS9960_STATUS) & 0x1;
@@ -198,7 +198,7 @@ namespace apds9960 {
         let c = i2cread(ADDR, APDS9960_CDATAL) + i2cread(ADDR, APDS9960_CDATAH)*256;
         return c
     }
-    //% blockId=apds9960_readproximity block="APDS9960 Get Proximity"
+    //% blockId=APDS9960_readproximity block="APDS9960 Get Proximity"
     //% weight=98
     export function ReadProximity(): number {
         let tmp = i2cread(ADDR, APDS9960_STATUS) & 0x1;

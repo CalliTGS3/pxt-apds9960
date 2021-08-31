@@ -1,0 +1,10 @@
+{
+	"APDS9960.ReadRedColor|block": "Rot",
+	"APDS9960.ReadGreenColor|block": "Grün",
+	"APDS9960.ReadBlueColor|block": "Blau",
+	"APDS9960.ReadClear|block": "Weiß",
+	"APDS9960.ReadProximity|block": "Abstand",
+	"APDS9960.ReadHue|block": "Farbwert",
+	"APDS9960.ReadId|block": "Identifikator",
+	"APDS9960.Init|block": "Initialisierung"
+}

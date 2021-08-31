@@ -1,4 +1,4 @@
-# pxt-apds9960
+# pxt-APDS9960
 
 #### Description
 This is a APDS9960 extension for the makecode editor.

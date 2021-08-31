@@ -1,5 +1,5 @@
 {
-    "name": "apds9960",
+    "name": "APDS9960",
     "version": "0.1.0",
     "description": "APDS9960 Extension for mini and microbit",
     "license": "MIT",
@@ -8,7 +8,9 @@
     },
     "files": [
         "README.md",
-        "main.ts"
+        "main.ts",
+        "_locales/de/APDS9960-strings.json",
+        "_locales/de/APDS9960-jsdoc-strings.json"
     ],
     "testFiles": [
         "test.ts"
