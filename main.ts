@@ -2,7 +2,7 @@
  * APDS9960 Sensor
  */
 
-//% color="#31C7D5" weight=10 icon="\uf2a7 block="APDS9960"
+//% color="#31C7D5" weight=10 icon="\uf2a7" block="APDS9960"
 namespace APDS9960 {
     const ADDR = 0x39
     const APDS9960_RAM = 0x00
