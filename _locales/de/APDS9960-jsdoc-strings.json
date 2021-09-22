@@ -6,5 +6,6 @@
 	"APDS9960.ReadProximity": "Liest den Abstands Wert",
 	"APDS9960.ReadHue": "Liest den Farbwert",
 	"APDS9960.ReadId": "Liest den Indikator",
-	"APDS9960.Init": "Initialisiert den Sensor"
+	"APDS9960.Init": "Initialisiert den Sensor",
+	"APDS9960.onGesture": "Tue etwas, wenn eine Geste erkannt wird"
 }
