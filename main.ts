@@ -382,7 +382,7 @@ namespace APDS9960 {
     let DEFAULT_GPENTH = 40      // Threshold for entering gesture mode
     let DEFAULT_GEXTH = 30      // Threshold for exiting gesture mode    
     let DEFAULT_GCONF1 = 0x40    // 4 gesture events for int., 1 for exit
-    let DEFAULT_GGAIN = GGAIN_4X
+    let DEFAULT_GGAIN = GGAIN_1X
     let DEFAULT_GLDRIVE = LED_DRIVE_100MA
     let DEFAULT_GWTIME = GWTIME_2_8MS
     let DEFAULT_GOFFSET = 0       // No offset scaling for gesture mode
